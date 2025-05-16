@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دامداریار</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>شناسنامه دام</h1>
+  <form id="sheepForm">
+    <label>شماره گوش: <input type="text" id="tagNumber" required /></label>
+    <label>نژاد: <input type="text" id="breed" /></label>
+    <label>جنسیت:
+      <select id="gender">
+        <option value="نر">نر</option>
+        <option value="ماده">ماده</option>
+      </select>
+    </label>
+    <label>تاریخ تولد: <input type="date" id="birthDate" /></label>
+    <button type="submit">ثبت</button>
+  </form>
+
+  <h2>لیست دام‌ها</h2>
+  <ul id="sheepList"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
